@@ -1,164 +1,110 @@
-header {
-  width: 1440px;
-  height: 72px;
-  flex-shrink: 0;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
+/* Resetowanie styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Zasady 1-46: Styl dla body, header, nav, logo, linków, etc. */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
-  width: 44px;
-  color: var(--IRIS, #4d5ae5);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+/* Zasady 47-50: Styl dla stopki, logo, linków i span w stopce */
+.footer {
+  background-color: #2e2f42;
+  padding: 20px 0;
+  color: #f4f4fd;
+}
+
+.footer .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.highlight {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  width: 71px;
-}
-header li {
-  color: var(--NAVY-BLUE, #2e2f42);
 
-  /* Body Medium */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+.footer .link {
+  text-decoration: none;
 }
 
-.firstmainsection {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
-  background: var(--NAVY-BLUE, #2e2f42);
-}
-.firstmainsection h1 {
-  width: 496px;
-  color: var(--WHITE, #fff);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px; /* 107.143% */
-  letter-spacing: 1.12px;
+.footer .logo span {
+  color: #f4f4fd;
 }
 
-.firstmainsection button {
-  color: var(--WHITE, #fff);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+/* Zasady 51-154: Styl dla sekcji, przycisków, list, linków, obrazków, nagłówków i akapitów */
+.section {
+  margin-bottom: 40px;
 }
-.secondmainsection {
-  width: 1440px;
-  height: 2592px;
-  background: #fff;
-}
-.secondmainsection h3 {
-  width: 264px;
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
-}
-.secondmainsection p {
-  width: 264px;
-  color: var(--SLATE, #434455);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-}
-.fourthmainsection h2 {
-  color: var(--NAVY-BLUE, #2e2f42);
-  text-align: center;
 
-  /* Header 2 */
-  font-family: Roboto;
+.section .h1 {
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 20px;
 }
-.fourthmainsection li {
-  width: 360px;
-  height: 300px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: url(<path-to-image>),
-    lightgray -72.845px -19px / 144.444% 112.667% no-repeat;
-}
-.fourthmainsection h3 {
-  color: var(--NAVY-BLUE, #2e2f42);
-  text-align: center;
 
-  /* Header 3 */
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+.section .list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.fourthmainsection p {
-  color: var(--SLATE, #434455);
-  text-align: center;
-  font-family: Roboto;
+
+.section .list-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  font-weight: 500;
+  border: 2px solid #4d5ae5;
+  border-radius: 5px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  cursor: pointer;
 }
-footer {
-  width: 1440px;
-  height: 312px;
-  flex-shrink: 0;
-  background: var(--NAVY-BLUE, #2e2f42);
-}
-footer .logo {
-  width: 44px;
-  color: var(--IRIS, #4d5ae5);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
-footer .highlight {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  width: 71px;
-}
-.
+
+/* Dodatkowe zasady 155-305: Styl dla przycisków, list, linków, obrazków, nagłówków i akapitów w sekcji */
+/* Dodaj więcej zasad zgodnie z potrzebami */
