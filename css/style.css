@@ -21,16 +21,14 @@ body {
   letter-spacing: 0.32px;
   background-color: var(--color-white);
 }
-header {
+.oneonlyheader {
   background-color: var(--color-white);
 }
 .list {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
-button {
+
+.portfoliobutton {
   color: var(--color-white);
   background-color: var(--iris);
 }
@@ -68,7 +66,7 @@ button:hover {
 }
 .link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--logo-studio);
 }
 .link-address {
@@ -76,6 +74,7 @@ button:hover {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .nav-link {
   font-weight: 400;
@@ -85,7 +84,7 @@ button:hover {
   color: var(--logo-studio);
 }
 .highlight {
-  color: #2e2f42;
+  color: var(--background-color1);
 }
 .highlight-footer {
   color: var(--background-color2);
@@ -114,7 +113,7 @@ button:hover {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--bg-color);
 }
 
 .heading-values {
@@ -142,15 +141,15 @@ button:hover {
 }
 
 .section-four-background {
-  background-color: #f4f4fd;
+  background-color: var(--background-color2);
 }
 
 .list-section-four-background {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 
 .section-four-background-fff {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 
 .header-section-four-index {
@@ -168,7 +167,7 @@ button:hover {
 
 .footer-p {
   line-height: 1.5;
-  color: #f4f4fd;
+  color: var(--background-color2);
   letter-spacing: 0.02em;
 }
 
@@ -188,13 +187,13 @@ button:hover {
 }
 
 .portfoliobutton:hover {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--bg-color);
+  background-color: var(--ocean);
 }
 
 .portfoliobutton:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--bg-color);
+  background-color: var(--ocean);
 }
 
 .portfolio-p {
@@ -202,6 +201,7 @@ button:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--first-color-text);
+  font-weight: 400;
 }
 
 .specialist-item {
