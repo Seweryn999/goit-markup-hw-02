@@ -39,6 +39,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white);
+  background-color: #4d5ae5;
   cursor: pointer;
 }
 
@@ -182,7 +183,7 @@ button:hover {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--second-color-text);
-  background-color: #4d5ae5;
+  background-color: #f4f4fd;
   cursor: pointer;
 }
 
