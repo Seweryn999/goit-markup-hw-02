@@ -66,7 +66,7 @@ button:hover {
 }
 .link {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--logo-studio);
 }
 .link-address {
@@ -182,7 +182,7 @@ button:hover {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--second-color-text);
-  background-color: var(--background-color2);
+  background-color: #4d5ae5;
   cursor: pointer;
 }
 
