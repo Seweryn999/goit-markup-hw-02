@@ -67,7 +67,7 @@ button:hover {
 }
 .link {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--logo-studio);
 }
 .link-address {
@@ -75,6 +75,7 @@ button:hover {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--first-color-text);
   text-decoration: none;
 }
 .nav-link {
